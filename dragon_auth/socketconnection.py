@@ -4,6 +4,10 @@ from swampdragon.connections.sockjs_connection import DjangoSubscriberConnection
 
 
 class HttpDataConnection(DjangoSubscriberConnection):
+    def __init__(self, session):
+        self._user = None
+        super(HttpDataConnection, self).__init__(session)
+
     def get_user(self):
         try:
             if self._user is not None:
