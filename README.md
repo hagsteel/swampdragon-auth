@@ -2,7 +2,7 @@ Swamp Dragon auth
 =================
 
 # Installation
-pip install -e git+git@github.com:jonashagstedt/swampdragon-auth.git#egg=swampdragon-auth
+```pip install swampdragon-auth```
 
 
 # Django settings.py file
