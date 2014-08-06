@@ -9,7 +9,7 @@ Swamp Dragon auth
 Add the following code to your settings file:
 
     SOCKJS_CLASSES = (
-        ('dragon_auth.socketconnection.HttpDataConnection', '/data'),
+        ('swampdragon_auth.socketconnection.HttpDataConnection', '/data'),
     )
 
 
