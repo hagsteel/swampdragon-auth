@@ -15,13 +15,17 @@ setup(
     keywords="SwampDragon, SwampDragon-auth, auth, authentication",
     url = "https://github.com/jonashagstedt/swampdragon-auth",
     packages=['swampdragon_auth', ],
+    include_package_data=True,
     long_description=read('README.md'),
     install_requires=[
         "SwampDragon"
     ],
     classifiers=[
-        "Development Status :: Beta",
-        "Topic :: User access",
+        "Development Status :: 4 - Beta",
         "License :: OSI Approved :: BSD License",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.3",
+        "Programming Language :: Python :: 3.4",
     ],
 )
