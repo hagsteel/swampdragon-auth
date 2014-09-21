@@ -13,7 +13,7 @@ Add the following code to your settings file:
 
 ## Important note about deployment
 
-If you are running your SwampDragon instances on a subdomain, set 
+If you are running your SwampDragon instances on a subdomain, you need to set 
 
     SESSION_COOKIE_DOMAIN = .yourdomain.tld
     
@@ -23,8 +23,6 @@ To access a signed in user in your router:
 
     self.connection.get_user()
     
-or alternatively
+or
 
     self.connection.user
-    
-The results are the same.
