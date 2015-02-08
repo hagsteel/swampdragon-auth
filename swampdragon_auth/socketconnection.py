@@ -2,7 +2,6 @@ from django.conf import settings
 from django.contrib.auth import login, get_user_model
 from django.contrib.sessions.models import Session
 from swampdragon.connections.sockjs_connection import DjangoSubscriberConnection
-from session_decoder import decode_session
 
 
 class HttpDataConnection(DjangoSubscriberConnection):
@@ -17,7 +16,7 @@ class HttpDataConnection(DjangoSubscriberConnection):
             cookie_name = getattr(settings, 'SESSION_COOKIE_NAME', 'sessionid')
             morsel = self.session.conn_info.cookies.get(cookie_name)
             session = Session.objects.get(session_key=morsel.value)
-            decoded_session = decode_session(session)
+            decoded_session = session.get_decoded()
             self._user = get_user_model().objects.get(pk=decoded_session['_auth_user_id'])
         except:
             self._user = None
