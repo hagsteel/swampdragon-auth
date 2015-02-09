@@ -26,3 +26,9 @@ To access a signed in user in your router:
 or
 
     self.connection.user
+
+
+## Contributing
+
+Contributions are more than welcome.
+Just make sure your pull request works with both python 2.7 and 3.4
