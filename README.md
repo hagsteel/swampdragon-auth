@@ -30,5 +30,4 @@ or
 
 ## Contributing
 
-Contributions are more than welcome.
-Just make sure your pull request works with both python 2.7 and 3.4
+Contributions are more than welcome, just make sure your pull request works with both python 2.7 and 3.4
