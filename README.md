@@ -39,7 +39,7 @@ or
 from swampdragon_tokenauth.mixins import TokenAuthMixin
 from swampdragon.route_handler import ModelRouter
 
-# TokenAuthMixin should come before the model router
+### TokenAuthMixin should come before the model router
 
     class TodoItemRouter(TokenAuthMixin,ModelRouter):
         route_name = 'todo-item'
