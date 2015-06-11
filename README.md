@@ -36,8 +36,10 @@ or
 
 2.  Add the TokenAuthMixin to your router:
 
+```
 from swampdragon_tokenauth.mixins import TokenAuthMixin
 from swampdragon.route_handler import ModelRouter
+```
 
 ### TokenAuthMixin should come before the model router
 
