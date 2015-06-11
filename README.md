@@ -32,7 +32,7 @@ or
 
 1.  Add the following to the settings file:
 
-`SWAMP_DRAGON_CONNECTION = ('swampdragon_tokenauth.socketconnection.RemoteDataConnection', '/data')`
+`SWAMP_DRAGON_CONNECTION = ('swampdragon.socketconnection.RemoteDataConnection', '/data')`
 
 2.  Add the TokenAuthMixin to your router:
 
